@@ -14,7 +14,7 @@ _start
 	mov rax ,1 ; write call
 	mov rdi ,1
 	mov rsi,msg1
-	mov rdx ,len 
+	mov rdx ,len1
 	syscall
 	
 	
@@ -24,6 +24,16 @@ _start
 	mov rsi,num
 	mov rdx ,2 
 	syscall
+	
+	mov rax ,1 ; write call
+	mov rdi ,1
+	mov rsi,num
+	mov rdx ,2
+	syscall
+	
+	
+	
+	
 	
 	
 	mov rax ,60
